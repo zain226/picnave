@@ -1,0 +1,13 @@
+{
+    "name": "Photographer",
+    "alias": "photographer",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Photographer\\Providers\\PhotographerServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
