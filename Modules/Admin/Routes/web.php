@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Route;
 use Modules\Admin\Http\Controllers\CategoryController;
 use Modules\Admin\Http\Controllers\ImageController;
+use Modules\Admin\Http\Controllers\PhotographerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +28,9 @@ Route::as('admin.')->prefix('admin')->middleware(['is_admin'])->group(function()
 
     Route::resource('/categories', CategoryController::class);
     Route::resource('/images', ImageController::class);
+
+    Route::get('/photographers/images/status/{id}', [PhotographerController::class,'photographerImagesStatus'])->name('photographer.images.status');
+    Route::get('/photographers/images/{type?}', [PhotographerController::class,'photographerImages'])->name('photographer.images');
+    Route::get('/photographers/status/{id}', [PhotographerController::class,'toggleStatus'])->name('photographer.toggle.status');
+    Route::resource('/photographers', PhotographerController::class);
 });

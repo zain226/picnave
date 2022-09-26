@@ -23,7 +23,6 @@ Route::get('/register/{type}', [HomeController::class,'register'])->name('user.r
 
 
 
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');

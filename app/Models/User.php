@@ -59,4 +59,9 @@ class User extends Authenticatable implements MustVerifyEmail
 //            return asset('assets/admin/app-assets/images/portrait/small/avatar-s-11.jpg');
         }
     }
+
+    public function images()
+    {
+        return $this->hasMany(Images::class,'user_id');
+    }
 }

@@ -21910,19 +21910,19 @@
         "isMulticolor": false,
         "isMulticolor2": false,
         "tags": [
-          "camera_front"
+          "camerafront"
         ],
         "defaultCode": 58289,
         "grid": 24
       },
       "attrs": [],
       "properties": {
-        "ligatures": "camera_front",
+        "ligatures": "camerafront",
         "id": 132,
         "order": 143,
         "prevSize": 24,
         "code": 58289,
-        "name": "camera_front"
+        "name": "camerafront"
       },
       "setIdx": 2,
       "setId": 2,
@@ -26824,19 +26824,19 @@
         "isMulticolor": false,
         "isMulticolor2": false,
         "tags": [
-          "flip_to_front"
+          "flip_tofront"
         ],
         "defaultCode": 59523,
         "grid": 24
       },
       "attrs": [],
       "properties": {
-        "ligatures": "flip_to_front",
+        "ligatures": "flip_tofront",
         "id": 314,
         "order": 325,
         "prevSize": 24,
         "code": 59523,
-        "name": "flip_to_front"
+        "name": "flip_tofront"
       },
       "setIdx": 2,
       "setId": 2,

@@ -2778,7 +2778,7 @@
 .icon-camera_enhance:before {
   content: "\e8fc";
 }
-.icon-camera_front:before {
+.icon-camerafront:before {
   content: "\e3b1";
 }
 .icon-camera_rear:before {
@@ -3324,7 +3324,7 @@
 .icon-flip_to_back:before {
   content: "\e882";
 }
-.icon-flip_to_front:before {
+.icon-flip_tofront:before {
   content: "\e883";
 }
 .icon-folder2:before {

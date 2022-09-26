@@ -13,6 +13,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Modules\Photographer\Http\Controllers\PhotographerController;
 use Modules\Photographer\Http\Controllers\ProfileController;
 
 //Auth::routes(['verify' => true]);
@@ -20,4 +21,10 @@ Route::as('photographer.')->prefix('photographer')->middleware(['auth', 'verifie
     Route::get('/dashboard', [ProfileController::class,'index'])->name('dashboard');
     Route::get('/profile', [ProfileController::class,'profileEdit'])->name('profile.edit');
     Route::post('/profile', [ProfileController::class,'profileEditSubmit'])->name('profile.edit.submit');
+
+    Route::get('/upload', [PhotographerController::class,'upload'])->name('upload');
+    Route::post('/upload', [PhotographerController::class,'uploadSubmit'])->name('upload.submit');
 });
+
+
+
